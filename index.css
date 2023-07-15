@@ -1,0 +1,156 @@
+*,
+:before,
+:after {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+background: #EDEDED;
+   font-family: 'Gluten', cursive, sans-serif;
+}
+
+/* text elements here */
+h1, 
+h2, 
+h3, 
+h4 {
+    margin-top:0;
+}
+
+h3 {
+    margin-bottom: 0.1em;
+}
+
+p {
+    margin-top: .5em;
+}
+
+.lighter-text {
+    font-weight: 400;
+}
+
+/* images  */
+ .avatar-img {
+    border-radius: 50%;
+}
+
+
+.article-img {
+    width: 100%;
+    margin-top: 1em;
+    border-radius: 5px;
+ }
+
+
+/* Main elements start here*/
+
+/* REWORKED*/
+/* .container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 540px;
+    margin: auto;
+    background: #fff;
+    padding: .7em 1em 1em;
+} */
+
+.container {
+    width: 100%; 
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+}
+
+article {
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
+    }
+    
+    
+/* Header El here */
+header {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header-imgs {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 1.5em;
+    border-bottom: 1px solid gray;
+}
+    
+.logo-img,
+.avatar-img {
+    height: 50px;
+} 
+
+
+/*>>> Information article here */
+article {
+margin-bottom: 1em;
+}
+
+.info-wrapper {
+    margin: 1em 0 0;
+}
+
+
+article .avatar-img {
+    margin: 0 .5em 0;
+}
+
+.location-text {
+    margin-bottom: 0; 
+}
+/*>>> ends Info. article */
+
+
+
+/* Post wrapper starts here */
+.posts-el-wrapper {
+    display: flex;
+    flex-direction:column;
+}
+
+    /* Icons el starts */
+    .icons-el {
+        padding: .5em 0 0;
+    }
+
+    .icon-img {
+        width: 1.5em;
+        opacity: 0.5;
+    }
+
+    .icon-img:hover {
+        opacity: 1.0;
+        transform: rotate(20deg);
+    }
+
+    .icons-el:hover,
+    .icon-el:focus {
+        color: red;
+    } 
+    /* Icons el ENDS */
+
+   
+    .likes-text {
+        margin-bottom:0;
+    }
+
+    .post-content {
+    margin: 1em 0 .5em;
+    }
+
+    .tagline {
+        font-weight:600;
+    }
+/* ends .posts-el-wrapper */
